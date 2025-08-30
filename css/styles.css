@@ -1,50 +1,103 @@
-.body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+body {
+  font-family: "Noto Serif JP", "EB Garamond", serif;
+  background: #f8f5f2;
+  color: #3b2c1a;
+  letter-spacing: 0.04em;
+  line-height: 1.8;
 }
 
 .header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+  box-shadow: none;
 }
 
-.nav ul {
-    list-style-type: none;
-    padding: 0;
+.card {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  margin: 2rem auto;
+  padding: 2.5rem 2rem;
+  max-width: 420px;
 }
 
-.nav ul li {
-    display: inline;
-    margin-right: 1rem;
+.card h2 {
+  color: #7c5c3b;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
 }
 
-.nav ul li a {
-    color: #fff;
-    text-decoration: none;
+a {
+  color: #48759a;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #24528b;
 }
 
-.footer {
-    text-align: center;
-    padding: 3rem;
-    background: #333;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+nav ul li a {
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+nav ul li a:hover {
+  border-bottom: 2px solid #7c5c3b;
 }
 
 @media (max-width: 600px) {
-    .header, .footer {
-        padding: 1rem;
-    }
+  .card {
+    padding: 1.2rem 0.5rem;
+  }
+  .header > div {
+    padding: 1rem 0.5rem !important;
+  }
+}
+.body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
 
-    .nav ul li {
-        display: block;
-        margin: 0.5rem 0;
-    }
+.header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  padding: 3rem;
+  background: #333;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .header,
+  .footer {
+    padding: 1rem;
+  }
+
+  .nav ul li {
+    display: block;
+    margin: 0.5rem 0;
+  }
 }
